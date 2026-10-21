@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .uber-shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  .uber-shadow-lg {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  }
+  .uber-border {
+    border-color: #e5e5e5;
+  }
+}
+
+@keyframes call-button-blink {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25), 0 0 0 0 rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.025);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 0 12px rgba(0, 0, 0, 0);
+  }
+}
+
+@keyframes call-button-blink-white {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.3), 0 0 0 0 rgba(255, 255, 255, 0.6);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.025);
+    box-shadow: 0 8px 26px rgba(255, 255, 255, 0.5), 0 0 0 12px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes phone-ring {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30%, 50% {
+    transform: rotate(-14deg);
+  }
+  20%, 40%, 60% {
+    transform: rotate(14deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-call-blink {
+  animation: call-button-blink 1.2s infinite ease-in-out;
+}
+
+.animate-call-blink-white {
+  animation: call-button-blink-white 1.2s infinite ease-in-out;
+}
+
+.animate-phone-ring {
+  display: inline-block;
+  animation: phone-ring 1.8s infinite ease-in-out;
+}
+

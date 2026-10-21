@@ -1,0 +1,6 @@
+{
+  "name": "Cab Services Mohali",
+  "description": "Book cab services in Mohali, Chandigarh and Zirakpur for local rides, airport drops and outstation trips. Safe, family-friendly taxis at affordable prices. Call now!",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
