@@ -66,3 +66,29 @@
   animation: phone-ring 1.8s infinite ease-in-out;
 }
 
+/* Explicit Responsive Rules & Media Queries for Cross-Device Layout & Mobile SEO */
+@media screen and (max-width: 768px) {
+  body {
+    padding-bottom: 76px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .responsive-stack {
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .responsive-full {
+    width: 100% !important;
+  }
+}
+
+
